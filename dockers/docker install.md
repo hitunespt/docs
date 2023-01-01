@@ -4,6 +4,7 @@ Run updates:
 ```sh
 yum update
 ```
+
 &nbsp;
 ### Add Docker Repository to Oracle Linux 9
 
@@ -14,4 +15,11 @@ yum install -y yum-utils
 
 ```sh
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+```
+
+&nbsp;
+### Remove existing Docker Engine before proceeding with installation
+
+```sh
+yum remove docker docker-* podman runc
 ```
