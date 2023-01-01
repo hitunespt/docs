@@ -4,7 +4,7 @@
 #### LVM structure:
 
 
-![](misc/images/lvm_structure.png)
+![](../misc/images/lvm_structure.png)
 
 
 &nbsp;
