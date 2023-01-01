@@ -6,7 +6,6 @@ LVM structure:
 
 ![](../misc/images/lvm_structure.png)
 
-<br>
 Create disk on vmware:
 
 ![](../misc/images/vmware_create_disk.png)
