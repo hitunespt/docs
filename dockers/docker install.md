@@ -23,3 +23,25 @@ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce
 ```sh
 yum remove docker docker-* podman runc
 ```
+
+```sh
+yum install docker-ce docker-ce-cli containerd.io
+```
+
+&nbsp;
+### Start and enable Docker
+
+```sh
+systemctl start docker
+```
+
+```sh
+systemctl enable docker
+```
+
+&nbsp;
+### Run Docker Commands as Non-Root User
+```sh
+sudo usermod -aG docker $USER 
+newgrp docker
+```
