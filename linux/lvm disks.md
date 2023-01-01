@@ -1,14 +1,14 @@
 # LVM disks
 
 
-#### LVM structure:
+LVM structure:
 
 
 ![](../misc/images/lvm_structure.png)
 
 
 &nbsp;
-###### Create disk on vmware:
+Create disk on vmware:
 
 ![](../misc/images/vmware_create_disk.png)
 
