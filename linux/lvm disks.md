@@ -3,7 +3,9 @@
 
 #### LVM structure:
 
-![](misc/images/lvm_structure.png)
+
+![](https://github.com/hitunespt/docs/blob/b258b484d193447e298b122379440b95a6df441b/misc/images/lvm_structure.png)
+
 
 &nbsp;
 ###### Create disk on vmware:
