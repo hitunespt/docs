@@ -1,5 +1,6 @@
 # LVM disks
 
+### Create:
 
 LVM structure:
 
@@ -14,6 +15,8 @@ List the block device to see the newly assigned vSphere hard disk
 ```sh
 lsblk
 ```
+
+![[../misc/images/lsblk.png]]
 
 Format the disk partition. Get the device name from the previous lsblk output
 
@@ -86,3 +89,59 @@ Display the new directory
 ```sh
 df -h
 ```
+
+&nbsp;
+### Resize
+
+Expand disk in 20Gb
+![[../misc/images/vmware_resize_disk.png]]
+
+
+List the block device to see the resized vSphere hard disk
+
+```sh
+lsblk
+```
+
+![](../misc/images/lsblk_resize.png)
+
+Format the disk partition. Get the device name from the previous lsblk output
+
+```sh
+fdisk /dev/sdb
+```
+
+```
+n (new partition)
+
+p (primary)
+
+(Press ENTER) (Use default partition number)
+
+(Press ENTER) (Use default first sector)
+
+(Press ENTER) (Use default last sector)
+
+t (change the partition type)
+
+(choose partition 2)
+
+8e (Linux LVM)
+
+w (write)
+```
+
+
+Initialize the physical volume
+
+pvcreate /dev/sdb2
+
+
+Extend the volume group
+
+vgextend vgData /dev/sdb2
+
+
+Extend the logical volume for the volume group and extends the filesystem
+
+lvextend -l +100%FREE -r /dev/vgData/lvData
