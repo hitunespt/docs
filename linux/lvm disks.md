@@ -4,7 +4,7 @@
 #### LVM structure:
 
 
-![](https://github.com/hitunespt/docs/blob/b258b484d193447e298b122379440b95a6df441b/misc/images/lvm_structure.png)
+![](misc/images/lvm_structure.png)
 
 
 &nbsp;
