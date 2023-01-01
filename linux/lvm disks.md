@@ -16,7 +16,7 @@ List the block device to see the newly assigned vSphere hard disk
 lsblk
 ```
 
-![[../misc/images/lsblk.png]]
+![](../misc/images/lsblk.png)
 
 Format the disk partition. Get the device name from the previous lsblk output
 
@@ -94,7 +94,8 @@ df -h
 ### Resize
 
 Expand disk in 20Gb
-![[../misc/images/vmware_resize_disk.png]]
+
+![](../misc/images/vmware_resize_disk.png)
 
 
 List the block device to see the resized vSphere hard disk
@@ -138,7 +139,7 @@ List the block device again to display the new disk partition /dev/sdb2
 lsblk
 ```
 
-![[../misc/images/lsblk_sdb2.png]]
+![](../misc/images/lsblk_sdb2.png)
 
 
 Initialize the physical volume
@@ -160,3 +161,10 @@ Extend the logical volume for the volume group and extends the filesystem
 ```sh
 lvextend -l +100%FREE -r /dev/vgData/lvData
 ```
+
+Display the new space
+
+```sh
+df -h
+```
+
