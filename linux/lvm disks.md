@@ -6,9 +6,11 @@ LVM structure:
 
 ![](../misc/images/lvm_structure.png)
 
+
 Create disk on vmware:
 
 ![](../misc/images/vmware_create_disk.png)
+
 
 List the block device to see the newly assigned vSphere hard disk
 
