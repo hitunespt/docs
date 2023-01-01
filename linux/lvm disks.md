@@ -132,16 +132,31 @@ w (write)
 ```
 
 
+List the block device again to display the new disk partition /dev/sdb2
+
+```sh
+lsblk
+```
+
+![[../misc/images/lsblk_sdb2.png]]
+
+
 Initialize the physical volume
 
+```sh
 pvcreate /dev/sdb2
+```
 
 
 Extend the volume group
 
+```sh
 vgextend vgData /dev/sdb2
+```
 
 
 Extend the logical volume for the volume group and extends the filesystem
 
+```sh
 lvextend -l +100%FREE -r /dev/vgData/lvData
+```
