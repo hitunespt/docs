@@ -12,18 +12,21 @@ Create disk on vmware:
 
 ![](../misc/images/vmware_create_disk.png)
 
+&nbsp;
 List the block device to see the newly assigned vSphere hard disk
 
 ```sh
 lsblk
 ```
 
+&nbsp;
 Format the disk partition. Get the device name from the previous lsblk output
 
 ```sh
 fdisk /dev/sdb
 ```
 
+&nbsp;
 Create a new partition
 
 ```sh
@@ -44,30 +47,35 @@ t (change the partition type)
 w (write)
 ```
 
+&nbsp;
 Initialize the physical volume
 
 ```sh
 pvcreate /dev/sdb1
 ```
 
+&nbsp;
 Create the volume group
 
 ```sh
 vgcreate vgData /dev/sdb1
 ```
 
+&nbsp;
 Create the logical volume for the volume group
 
 ```sh
 lvcreate -n lvData -l +100%FREE vgData
 ```
 
+&nbsp;
 Construct an XFS filesystem on the new logical volume
 
 ```sh
 mkfs.xfs /dev/vgData/lvData
 ```
 
+&nbsp;
 Mount a Unix directory to the logical volume
 Edit the text file /etc/fstab and add the line below:
 
@@ -75,16 +83,19 @@ Edit the text file /etc/fstab and add the line below:
 /dev/vgData/lvData     /data               xfs     defaults        0 0
 ```
 
+&nbsp;
 Create directory
 ```sh
 mkdir -p /data
 ```
 
+&nbsp;
 Mount directory
 ```sh
 mount /data
 ```
 
+&nbsp;
 Display the new directory
 ```sh
 df -h
