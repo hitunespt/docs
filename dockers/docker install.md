@@ -5,7 +5,7 @@ Run updates:
 yum update
 ```
 
-
+\
 ### Add Docker Repository to Oracle Linux 9
 
 Use the **yum-config-manger** tool to add docker repo in Oracle Linux 9
