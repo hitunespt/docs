@@ -24,16 +24,16 @@ Format the disk partition. Get the device name from the previous lsblk output
 fdisk /dev/sdb
 ```
 
-Create a new partition
+Create a new partition:
 
-n (new partition)
-p (primary)
-(Press ENTER) (Use default partition number)
-(Press ENTER) (Use default first sector)
-(Press ENTER) (Use default last sector)
-t (change the partition type)
-8e (Linux LVM)
-w (write)
+- n (new partition)
+- p (primary)
+- (Press ENTER) (Use default partition number)
+- (Press ENTER) (Use default first sector)
+- (Press ENTER) (Use default last sector)
+- t (change the partition type)
+- 8e (Linux LVM)
+- w (write)
 
 
 Initialize the physical volume
@@ -104,15 +104,17 @@ Format the disk partition. Get the device name from the previous lsblk output
 fdisk /dev/sdb
 ```
 
-n (new partition)
-p (primary)
-(Press ENTER) (Use default partition number)
-(Press ENTER) (Use default first sector)
-(Press ENTER) (Use default last sector)
-t (change the partition type)
-(choose partition 2)
-8e (Linux LVM)
-w (write)
+Create a new partition:
+
+- n (new partition)
+- p (primary)
+- (Press ENTER) (Use default partition number)
+- (Press ENTER) (Use default first sector)
+- (Press ENTER) (Use default last sector)
+- t (change the partition type)
+- (choose partition 2)
+- 8e (Linux LVM)
+- w (write)
 
 
 List the block device again to display the new disk partition /dev/sdb2
