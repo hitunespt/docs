@@ -2,7 +2,7 @@
 
 Run updates:
 ```sh
-yum update
+yum update -y
 ```
 
 &nbsp;
@@ -41,8 +41,32 @@ systemctl enable docker
 
 &nbsp;
 ### Run Docker Commands as Non-Root User
+
 ```sh
 sudo usermod -aG docker $USER
 
 newgrp docker
 ```
+
+
+$nbsp;
+### Install docker compose
+
+```sh
+curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+```sh
+chmod +x /usr/local/bin/docker-compose
+```
+
+```sh
+ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+```
+
+```sh
+docker-compose --version
+```
+
+
+
