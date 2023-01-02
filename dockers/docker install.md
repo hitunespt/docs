@@ -42,6 +42,7 @@ systemctl enable docker
 &nbsp;
 ### Run Docker Commands as Non-Root User
 ```sh
-sudo usermod -aG docker $USER 
+sudo usermod -aG docker $USER
+
 newgrp docker
 ```
