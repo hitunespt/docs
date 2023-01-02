@@ -49,7 +49,7 @@ newgrp docker
 ```
 
 
-$nbsp;
+&nbsp;
 ### Install docker compose
 
 ```sh
