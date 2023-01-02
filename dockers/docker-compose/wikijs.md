@@ -29,7 +29,7 @@ services:
       DB_NAME: wiki
     restart: unless-stopped
     ports:
-      - "8003:3000"
+      - "3000:3000"
     volumes:
       - wiki-data:/wiki/data/content
 
