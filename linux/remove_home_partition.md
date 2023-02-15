@@ -19,5 +19,3 @@ Remove the line on fstab for the home partition
 ```sh
 vim /etc/fstab
 ```
-
-JA
