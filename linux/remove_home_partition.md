@@ -20,4 +20,8 @@ Remove the line on fstab for the home partition
 vim /etc/fstab
 ```
 
+<<<<<<< Updated upstream
 Joao
+=======
+JAAA
+>>>>>>> Stashed changes
