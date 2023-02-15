@@ -61,16 +61,16 @@ Construct an XFS filesystem on the new logical volume
 mkfs.xfs /dev/vgData/lvData
 ```
 
+Create directory /data
+```sh
+mkdir -p /data
+```
+
 Mount a Unix directory to the logical volume
 Edit the text file /etc/fstab and add the line below:
 
 ```
 /dev/vgData/lvData     /data               xfs     defaults        0 0
-```
-
-Create directory /data
-```sh
-mkdir -p /data
 ```
 
 Mount directory /data

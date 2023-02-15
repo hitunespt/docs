@@ -17,7 +17,7 @@ lvm lvresize -l +100%FREE -r /dev/mapper/ol-root
 
 Remove the line on fstab for the home partition
 ```sh
-vim /ect/fstab
+vim /etc/fstab
 ```
 
 
