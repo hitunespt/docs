@@ -37,7 +37,8 @@ vi /etc/systemd/system/filebrowser.service
 Description=File Browser
 After=network.target
 
-[Service]User=nginx
+[Service]
+User=nginx
 Group=nginx
 ExecStart=/usr/local/bin/filebrowser -c /etc/filebrowser/filebrowser.json
 
