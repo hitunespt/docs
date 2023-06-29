@@ -50,3 +50,12 @@ WantedBy=multi-user.target
 ```sh
 systemctl enable --now filebrowser.service
 ```
+
+```sh
+cd /etc/filebrowser/
+chown nginx:nginx *.*
+```
+
+```sh
+systemctl restart nginx
+```
