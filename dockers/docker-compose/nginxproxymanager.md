@@ -48,4 +48,3 @@ networks:
   npm-internal:
   npm-nw:
     external: true
-    ```
