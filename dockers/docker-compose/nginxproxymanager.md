@@ -24,8 +24,8 @@ services:
       # Uncomment this if IPv6 is not enabled on your host
       # DISABLE_IPV6: 'true'
     volumes:
-      - ./data:/data
-      - ./letsencrypt:/etc/letsencrypt
+      - npm_data:/data
+      - npm_letsencrypt:/etc/letsencrypt
     depends_on:
       - db
 
@@ -39,4 +39,9 @@ services:
       MYSQL_USER: 'npm'
       MYSQL_PASSWORD: 'npm'
     volumes:
-      - ./mysql:/var/lib/mysql
+      - npm_mysql:/var/lib/mysql
+
+volumes:
+    npm_data:
+    npm_letsencrypt:
+    npm_mysql:
