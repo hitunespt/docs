@@ -1,22 +1,18 @@
 {
   "main": {
-    "id": "d2093c4d52951d1f",
+    "id": "9085276da6c1f996",
     "type": "split",
     "children": [
       {
-        "id": "d360e234c9cbe3ee",
+        "id": "3d5184e2b1b83a7f",
         "type": "tabs",
         "children": [
           {
-            "id": "e3341a5e99292b78",
+            "id": "d7afd3dd16da6ce5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/rsync.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -25,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "973f883b752ebb7c",
+    "id": "662ccadf28ffc294",
     "type": "split",
     "children": [
       {
-        "id": "a9ca46e90003d19f",
+        "id": "8fd7e1c67d4ec9a2",
         "type": "tabs",
         "children": [
           {
-            "id": "920cea95ef8c8b1c",
+            "id": "609a95759be0fa37",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +39,7 @@
             }
           },
           {
-            "id": "d3457a420de57be8",
+            "id": "cf882d6427e7f2a3",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +54,7 @@
             }
           },
           {
-            "id": "d5dc4ff3bd9a34fb",
+            "id": "1ac0e8d1b93d3b2e",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -72,20 +68,19 @@
     "width": 300
   },
   "right": {
-    "id": "15d543c866d7a6e5",
+    "id": "119eba649b3ef858",
     "type": "split",
     "children": [
       {
-        "id": "cf8ba69a64aad30f",
+        "id": "f4d999664cb86f9c",
         "type": "tabs",
         "children": [
           {
-            "id": "f6ba7f43ca59bfc8",
+            "id": "9e6c82c87c209a1b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/rsync.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +92,18 @@
             }
           },
           {
-            "id": "6d87048ad673bf7c",
+            "id": "13b2bd14777d0224",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/rsync.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "9c73601c3f595870",
+            "id": "e81f55476ac74935",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,13 +114,11 @@
             }
           },
           {
-            "id": "d72000ac1281114e",
+            "id": "4ad3e9e705e4da13",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "linux/rsync.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,9 +138,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e3341a5e99292b78",
+  "active": "d7afd3dd16da6ce5",
   "lastOpenFiles": [
+    "misc/markdown.md",
+    "misc/http-status-codes.md",
+    "misc/git.md",
+    "linux/rsync.md",
     "linux/remove_home_partition.md",
-    "linux/lvm_disks.md"
+    "linux/lvm_disks.md",
+    "linux/find_files_sorted_by_size.md"
   ]
 }
