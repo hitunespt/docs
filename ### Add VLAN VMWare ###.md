@@ -43,14 +43,14 @@
     
 
 ## VMWare
-**Adicionar vlan aos port groups dos hosts upesxint:**\
-https://upesxint01.olisipo.net/ui/#/host/networking/portgroups\
-https://upesxint02.olisipo.net/ui/#/host/networking/portgroups\
-https://upesxint03.olisipo.net/ui/#/host/networking/portgroups\
-https://upesxint04.olisipo.net/ui/#/host/networking/portgroups\
-https://upesxint05.olisipo.net/ui/#/host/networking/portgroups\
+**Adicionar vlan aos port groups dos hosts upesxint:**
+https://upesxint01.olisipo.net/ui/#/host/networking/portgroups
+https://upesxint02.olisipo.net/ui/#/host/networking/portgroups
+https://upesxint03.olisipo.net/ui/#/host/networking/portgroups
+https://upesxint04.olisipo.net/ui/#/host/networking/portgroups
+https://upesxint05.olisipo.net/ui/#/host/networking/portgroups
 https://upesxint06.olisipo.net/ui/#/host/networking/portgroups
 
-**Adicionar vlan aos port groups dos hosts upesxora:**\
-https://upesxora01.olisipo.net/ui/#/host/networking/portgroups\
+**Adicionar vlan aos port groups dos hosts upesxora:**
+https://upesxora01.olisipo.net/ui/#/host/networking/portgroups
 https://upesxora02.olisipo.net/ui/#/host/networking/portgroups
