@@ -25,7 +25,7 @@ yum remove docker docker-* podman runc
 ```
 
 ```sh
-yum install docker-ce docker-ce-cli containerd.io
+yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 &nbsp;
