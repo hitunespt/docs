@@ -44,8 +44,6 @@ systemctl enable docker
 
 ```sh
 sudo usermod -aG docker $USER
-
-newgrp docker
 ```
 
 
